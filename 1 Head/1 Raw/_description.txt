@@ -1,0 +1,92 @@
+We have:
+1) Genes annotation of referential genome
+2) Aligment of external branches (experimental genomes + referential genome)
+3) Aligments of internal branches (x2 x3 x4 = x24)
+4) Tree in 2 forms (x2 x3 = x6)
+5) Information about haplogrops (2 files)
+
+
+1) Genes annotation of referential genome [NC_012920.1.gb.gff]
+
+NC_012920	GenBank	D-loop	16024	16569	.	-	1	ID=GenBank:D-loop:NC_012920:16024:576
+NC_012920	GenBank	D-loop	1	576	.	-	1	ID=GenBank:D-loop:NC_012920:16024:576
+NC_012920	GenBank	gene	577	647	.	+	1	ID=TRNF;Dbxref=GeneID:4558,HGNC:HGNC:7481,MIM:590070;Name=TRNF;nomenclature=Official Symbol: MT-TF | Name: mitochondrially encoded tRNA phenylalanine | Provided by: HGNC:HGNC:7481
+NC_012920	GenBank	tRNA	577	647	.	+	1	ID=TRNF.r01;Parent=TRNF;Dbxref=GeneID:4558,HGNC:HGNC:7481,MIM:590070;Name=TRNF;Note=NAR: 1455;anticodon=(pos:611..613%2Caa:Phe%2Cseq:gaa);codon_recognized=UUC;product=tRNA-Phe
+NC_012920	GenBank	exon	577	647	.	+	1	Parent=TRNF.r01;Name=TRNF
+...
+
+
+
+2) Aligment of external branches [ASR.raxml.reduced_NC_012920.1.fas in reduced.teronly_NC_012920.fas.gz]
+
+>AF_AO_0001
+g-atcacaggtctatcaccctattaaccactc-acgggagctct-ccatgcatttggt-a
+tt-tt--c-------gtct---gggggg-tgtgcacgcg-atagcattgcga-gacgctg
+gagccg--gagca-ccctatgtcgcagtatctgtcttt-gattcctgccccatccc-att
+atttatcgcacctacg-ttc-aatattacaggcggac-a-tac-ct-actaaagcgtatt
+...
+...
+...
+>NC_012920
+g-atcacaggtctatcaccctattaaccactc-acgggagctctcc-atgcatttggt-a
+-t-ttt-c-------gtct---gggggg-tatgcacgcg-atagcattgcga-gacgctg
+gagccg--gagca-ccctatgtcgcagtatctgtcttt-gattcctgcctcatcct-att
+atttatcgcacctacg-ttc-aatattacaggcgaac-a-tac-tt-actaaagtgtgtt
+...
+
+
+
+3) Aligments of internal branches [ASR.raxml.reduced.prank.anconly.fas in prank_parsimony.anconly.fas.gz] x24 (in two options)
+
+OPTION A:
+
+>36504
+G-ATCACAGGTCTATCACCCTATTAACCACTC-ACGGGAGCTCTCCCATGCATTTGGT-ATT-TTT-C-------GTCT---GGGGGG-TGTGCACGCG-ATAGCATTGCGA-GACGCTGGAGCCG--GAGCA-CCCTATGTCGCAGTATCTGTCTTT-GATTCCTGCCCCAT
+...
+...
+...
+>18955
+G-ATCACAGGTCTATCACCCTATTAACCACTC-ACGGGAGCTCT-CCATGCATTTGGT-ATT-TT--C-------GTCT---GGGGGG-TGTGCACGCG-ATAGCATTGCGA-GACGCTGGAGCCG--GAGCA-CCCTATGTCGCAGTATCTGTCTTT-GATTCCTGCCCCAT
+...
+
+OPTION B:
+
+>18
+-|A|T|C|A|C|A|G|G|T|C|T|A|T|C|A|C|C|C|T|A|T|T|A|A|C|C|A|C|T|C|-|A|C|G|G|G|A|G|C|T|C|T|C|C|-|A|T|G|C|A|T|T|T|G|G|T|-|A|-|T|-|T|T|T|-|C|-|-|-|-|-|-|-|G|T|C|T|-|-|-|G|G|G|G|G|G
+...
+...
+...
+>1
+-|A|T|C|A|C|A|G|G|T|C|T|A|T|C|A|C|C|C|T|A|T|T|A|A|C|C|A|C|T|C|-|A|C|G|G|G|A|G|C|T|C|T|-|C|C|A|T|G|C|A|T|T|T|G|G|T|-|A|T|T|-|T|T|-|-|C|-|-|-|-|-|-|-|G|T|C|T|-|-|-|G|G|G|G|G|G
+...
+
+
+
+4.1) Tree in tree-form [iqtree_tre.ordN] x6
+
+(AF_AO_0001,(((((((((((((((((AF_AO_0002,AF_AO_0016)18,((((((AF_AO_0015,AF_BW_0132)24,AF_BW_0007)23,(((((((((AF_BW_0023,((((((AF_BW_0030,AF_BW_0051)39,AF_BW_0296)38,(AF_BW_0230,
+...
+...
+...
+,AF_ZM_0181)5,(AF_AO_0005,AF_AO_0008)36499)4,AF_AO_0205)3,AF_NA_0035)2,((((AF_AO_0199,AF_AO_0259)36503,AF_AO_0302)36502,AF_AO_0260)36501,AF_AO_0419)36500)1;
+
+
+
+4.2) Tree in list-form [iqtree_tre.ordN.coll] x6
+
+18	AF_AO_0002;AF_AO_0016
+24	AF_AO_0015;AF_BW_0132
+23	24;AF_BW_0007
+39	AF_BW_0030;AF_BW_0051
+38	39;AF_BW_0296
+...
+...
+...
+2	3;AF_NA_0035
+36503	AF_AO_0199;AF_AO_0259
+36502	36503;AF_AO_0302
+36501	36502;AF_AO_0260
+36500	36501;AF_AO_0419
+1	AF_AO_0001;2;36500
+
+
