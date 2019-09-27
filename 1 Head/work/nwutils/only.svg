@@ -1,0 +1,7 @@
+<?xml version='1.0' standalone='no'?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg width='300' height='40' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ><defs><style type='text/css'><![CDATA[
+ .leaf-label {font-size:medium;font-family:sans}
+ .inner-label {font-size:small;font-family:sans}
+ .edge-label {font-size:small;font-family:sans}
+]]></style></defs>
+<!-- arguments: -s -  -->
+<g transform='translate(0,20)'><g  style='stroke:black;fill:none;stroke-width:1;stroke-linecap:round'><line x1='0' y1='0.0000' x2='290.0000' y2='0.0000'/></g><g style='stroke:none'><text class='leaf-label' x='300.0000' y='4.0000'>AF BW 0133</text></g></g></svg>

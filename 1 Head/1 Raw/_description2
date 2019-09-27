@@ -1,0 +1,60 @@
+ASR.raxml.reduced_NC_012920.1.fas (выравнивание терминальных веточек, файл из reduced.teronly_NC_012920.fas.gz)
+
+
+ASR.raxml.reduced.prank.teronly.fas (выравнивание экспериментально полученных митогеномов)
+
+
+NC_012920.1.gb.gff (разметка, отсюда переносить координаты генов и др.)
+
+
+alg_tot.sequest.haplogrep (данные о гаплогруппах)
+all.phy-mer.classifications (данные о гаплогруппах)
+
+
+
+
+
+GTR_model / TN92_model
+     1 - первый метод который надо провернуть
+         
+         iqtree
+              iqtree_empiricalBayesian.anconlyMAP.fas (выравнивание предковых последовательностей)
+
+              iqtree_tre.ordN                         (дерево с именованными внутренними узлами)
+              iqtree_tre.ordN.coll                    (список соседних узлов)
+
+         prank
+              ASR.raxml.reduced.prank.anconly.fas
+
+              prank_tre.ordN
+              prank_tre.ordN.coll
+
+         raxml
+              RAxML_marginal.anconlyMAP.fas
+
+              RAxML_tre.ordN
+              RAxML_tre.ordN.coll
+
+     2 - первый метод который надо провернуть
+
+         iqtree
+              iqtree_empiricalBayesian.anconlyCumProb.fas
+              iqtree_empiricalBayesian.anconlyDiff.fas
+              iqtree_empiricalBayesian.anconlyThresh.fas
+
+              iqtree_tre.ordN
+              iqtree_tre.ordN.coll
+
+         raxml
+              RAxML_marginal.anconlyCumProb.fas
+              RAxML_marginal.anconlyDiff.fas
+              RAxML_marginal.anconlyThresh.fas
+
+              RAxML_tre.ordN
+              RAxML_tre.ordN.coll
+
+
+
+
+
+Референсный геном — последовательность ДНК в цифровом виде, составленная учеными как общий репрезентативный пример генетического кода того или иного вида. 

@@ -1,0 +1,8 @@
+nw_display -sr -S -w 450 -c css.map catarrhini > round.svg
+
+nw_prune catarrhini  Hominidae | nw_display -s catarrhini > except.svg
+
+nw_clade test.ordN 36494 | nw_display -sS - > only2.svg
+
+
+nw_distance -n test.ordN
